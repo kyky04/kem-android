@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            >
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:contentInsetStartWithNavigation="0dp"
+                android:padding="@dimen/spacing_medium">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                   <TextView
+                       fontPath="fonts/lato_regular.ttf"
+                       android:textSize="20dp"
+                       android:gravity="center"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="KEM"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+            <TextView
+                android:id="@+id/tv_welcome"
+                fontPath="fonts/lato_regular.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:padding="@dimen/spacing_medium"
+                android:text="Kemampuan Efektif Membaca"
+
+                tools:ignore="MissingPrefix" />
+
+
+        </android.support.design.widget.AppBarLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_large">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/spacing_very_small"
+                android:paddingLeft="@dimen/spacing_very_small"
+                android:paddingRight="@dimen/spacing_very_small"
+                android:paddingTop="@dimen/spacing_very_small"
+                android:visibility="visible">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/spacing_medium"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="3dp"
+                    app:cardElevation="2dp">
+
+                    <RelativeLayout
+                        android:id="@+id/btn_latihan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackground"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/rapat_k3"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:padding="@dimen/spacing_large"
+                            android:src="@drawable/ic_test" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_below="@+id/rapat_k3"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/spacing_medium">
+
+                            <TextView
+                                android:textSize="12sp"
+                                fontPath="fonts/lato_regular.ttf"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="LATIHAN"
+                                tools:ignore="MissingPrefix" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/spacing_medium"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="3dp"
+                    app:cardElevation="2dp">
+
+                    <RelativeLayout
+                        android:id="@+id/btn_petunjuk"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackground"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/img_inspeksi"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:padding="@dimen/spacing_large"
+                            android:src="@drawable/ic_petunjuk" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_below="@+id/img_inspeksi"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/spacing_medium">
+
+                            <TextView
+                                fontPath="fonts/lato_regular.ttf"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="PETUNJUK"
+                                android:textSize="12sp"
+                                tools:ignore="MissingPrefix" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/spacing_very_small"
+                android:paddingLeft="@dimen/spacing_very_small"
+                android:paddingRight="@dimen/spacing_very_small"
+                android:paddingTop="@dimen/spacing_very_small"
+                android:visibility="visible">
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/spacing_medium"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="3dp"
+                    app:cardElevation="2dp">
+
+                    <RelativeLayout
+                        android:id="@+id/btn_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackground"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/img_talk"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:padding="@dimen/spacing_large"
+                            android:src="@drawable/ic_information" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_below="@+id/img_talk"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/spacing_medium">
+
+                            <TextView
+                                fontPath="fonts/lato_regular.ttf"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="INFO"
+                                android:textSize="12sp"
+                                tools:ignore="MissingPrefix" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/spacing_medium"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="3dp"
+                    app:cardElevation="2dp">
+
+                    <RelativeLayout
+                        android:id="@+id/btn_tentang"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackground"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/img_meeting"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:padding="@dimen/spacing_large"
+                            android:src="@drawable/ic_petunjuk1" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_below="@+id/img_meeting"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/spacing_medium">
+
+                            <TextView
+                                fontPath="fonts/lato_regular.ttf"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="TENTANG"
+                                android:textSize="12sp"
+                                tools:ignore="MissingPrefix" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

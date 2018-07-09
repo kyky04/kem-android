@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HasilActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:title="HASIL KEM"
+        app:titleTextColor="@color/white"></android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_large">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_small"
+            android:text="JUMLAH KATA" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/kata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/txt_area"
+            android:enabled="false"
+            android:focusableInTouchMode="false"
+            android:padding="@dimen/spacing_large" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_small"
+            android:text="JUMLAH WAKTU" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/waktu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/txt_area"
+            android:enabled="false"
+            android:focusableInTouchMode="false"
+            android:padding="@dimen/spacing_large" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_small"
+            android:text="JAWABAN BENAR" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/jawaban_benar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/txt_area"
+            android:enabled="false"
+            android:focusableInTouchMode="false"
+            android:padding="@dimen/spacing_large" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_small"
+            android:text="SKOR IDEAL" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/skor_ideal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/txt_area"
+            android:enabled="false"
+            android:focusableInTouchMode="false"
+            android:padding="@dimen/spacing_large" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_small"
+            android:text="HASIL KEM" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:textColor="@color/white"
+            android:id="@+id/skor_kem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/txt_jawaban"
+            android:enabled="false"
+            android:focusableInTouchMode="false"
+            android:padding="@dimen/spacing_large" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_finish"
+            android:text="SELESAI"
+            android:textColor="@color/white"
+            android:background="@color/colorAccent"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

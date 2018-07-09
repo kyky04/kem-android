@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">KEM</string>
+
+    <string-array name="array_jk">
+        <item>Laki-Laki</item>
+        <item>Perempuan</item>
+    </string-array>
+    <string-array name="array_pilihan">
+        <item>Benar</item>
+        <item>Salah</item>
+    </string-array>
+
+    <string name="text_1">1. Klik Tombol Latihan pada Menu</string>
+    <string name="text_2">2. Klik secara berurutan, dimulai text pertama sampai terakhir</string>
+    <string name="text_3">3. Kemudian, mulai lah baca text tersebut</string>
+    <string name="text_4">4. Kemudian, Jawab lah baca pertanyaan tersebut</string>
+    <string name="text_5">5. Anda akan mendapatkan hasil Kemampuan Efektif Membaca</string>
+
+    <string name="info">KEM (Kemampuan Efektif Membaca) adalah kecepatan yang dicapai oleh pembaca berdasarkan rumus banyaknya kata di bagi panjangnya waktu yang di perlukan</string>
+    <string name="tentang">Aplikasi dibuat guna mengukur tingakat Kecepatan Efektif Membaca, Aplikasi ini dapat membantu siswa dan guru dalam proses pembelajaran </string>
+    <string name="perancang">Septia Sari Wulandari - 1405531</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="description_1">Aplikasi ini akan memudahkanmu berlatih meningkatkan Kemampuan Efektif Membaca    secara mandiri di manapun kamu berada.</string>
+</resources>
