@@ -5,13 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".HasilActivity">
+    tools:context=".HasilActivity"
+    android:background="#4682B4">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
+        android:background="#4682B4"
+        android:layout_gravity="center"
         app:title="INFORMASI"
         app:titleTextColor="@color/white"></android.support.v7.widget.Toolbar>
 
@@ -29,7 +31,29 @@
             android:enabled="false"
             android:focusableInTouchMode="false"
             android:padding="@dimen/spacing_large"
-            android:text="@string/info" />
+            android:text="@string/info"
+            android:textColor="@color/white"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rumus KEM"
+            android:textSize="16sp"
+            android:textColor="@color/white"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rumus"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Keterangan"
+            android:textColor="@color/white"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kpm = kata per menit"
+            android:textColor="@color/white"/>
+
 
 
     </LinearLayout>
